@@ -1,0 +1,32 @@
+Feature: Login functionality for SauceDemo # features/001_login.feature:1
+
+  @saucedemo
+  Scenario: Valid user can login                                           # features/001_login.feature:4
+    Given I am on the SauceDemo login page                                 # steps/login_steps_001.py:4
+    When I login with username "standard_user" and password "secret_sauce" # steps/login_steps_001.py:9
+    Then I should see the products page                                    # steps/login_steps_001.py:13
+
+Feature: Cart functionality # features/002_cart.feature:1
+
+  @cart
+  Scenario: Add product to cart and verify  # features/002_cart.feature:4
+    Given I am logged in to SauceDemo       # steps/cart_steps_002.py:6
+    When I add a product to the cart        # steps/cart_steps_002.py:12
+    Then the cart should have 1 item        # steps/cart_steps_002.py:16
+
+Feature: Checkout process # features/003_checkout.feature:1
+
+  @checkout
+  Scenario: Complete a checkout                          # features/003_checkout.feature:4
+    Given I have a product in the cart                   # steps/checkout_steps_003.py:7
+    When I proceed to checkout with "John" "Doe" "12345" # steps/checkout_steps_003.py:15
+    Then I should see the checkout complete page         # steps/checkout_steps_003.py:23
+
+Feature: Product filtering # features/004_search.feature:1
+
+  @search
+  Scenario: Filter products by price                # features/004_search.feature:4
+    Given I am logged in to SauceDemo               # steps/cart_steps_002.py:6
+    When I filter products by "Price (low to high)" # steps/search_steps_004.py:5
+    Then products should be sorted accordingly      # steps/search_steps_004.py:10
+
