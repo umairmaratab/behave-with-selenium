@@ -54,13 +54,19 @@ source venv/bin/activate    # On Mac/Linux
 venv\Scripts\activate       # On Windows
 ```
 3. Install dependencies
-``` pip install -r requirements.txt ```
+```bash
+pip install -r requirements.txt
+```
 
 4. Running the Tests
-``` behave ```
+```bash
+behave 
+```
 
 5. Run a specific feature
-``` behave features/001_login.feature ```
+```bash
+behave features/001_login.feature
+```
 
 6. Run with a specific browser
 ```bash
@@ -69,4 +75,6 @@ behave -D browser=chrome
 ```
 7. Reports 
 Generate an HTML Report:
-``` behave -f html -o report.html ```
+```bash
+behave -f html -o report.html 
+```
