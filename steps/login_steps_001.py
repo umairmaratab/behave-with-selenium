@@ -1,5 +1,5 @@
 from behave import given, when, then
-from pages.login_page import LoginPage
+from pages.login_page_001 import LoginPage
 
 @given("I am on the SauceDemo login page")
 def step_impl(context):
