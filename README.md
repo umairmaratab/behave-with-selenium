@@ -16,6 +16,7 @@ It includes **4 core features**:
 ---
 
 ## 📂 Project Structure
+```
 .
 ├── features/
 │   ├── 001_login.feature
@@ -37,7 +38,7 @@ It includes **4 core features**:
 └── README.md
 
 ---
-
+```
 ## ⚙️ Installation
 
 1. Clone this repository:
