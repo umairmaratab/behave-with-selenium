@@ -1,7 +1,7 @@
 from behave import given, when, then
 from selenium.webdriver.common.by import By
-from pages.login_page import LoginPage
-from pages.cart_page import CartPage
+from pages.login_page_001 import LoginPage
+from pages.cart_page_002 import CartPage
 
 @given("I am logged in to SauceDemo")
 def step_impl(context):
