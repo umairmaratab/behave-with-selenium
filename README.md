@@ -18,24 +18,23 @@ It includes **4 core features**:
 ## 📂 Project Structure
 .
 ├── features/
-│ ├── 00q_login.feature
-│ ├── 002_cart.feature
-│ ├── 003_checkout.feature
-│ ├── 004_search.feature
-│ └── steps/
-│ ├── login_steps_001.py
-│ ├── cart_steps_002.py
-│ ├── checkout_steps_003.py
-│ ├── search_steps_004.py
+│   ├── 001_login.feature
+│   ├── 002_cart.feature
+│   ├── 003_checkout.feature
+│   ├── 004_search.feature
+│   └── steps/
+│       ├── login_steps_001.py
+│       ├── cart_steps_002.py
+│       ├── checkout_steps_003.py
+│       ├── search_steps_004.py
 ├── pages/
-│ ├── login_page_001.py
-│ ├── search_page_004.py
-│ ├── cart_page_002.py
-│ └── checkout_page_003.py
+│   ├── login_page_001.py
+│   ├── search_page_004.py
+│   ├── cart_page_002.py
+│   └── checkout_page_003.py
 ├── environment.py
 ├── requirements.txt
 └── README.md
-
 
 ---
 
